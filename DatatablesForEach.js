@@ -1,4 +1,4 @@
-DatatablesForEachko.bindingHandlers.DataTablesForEach = {
+ko.bindingHandlers.DataTablesForEach = {
             
             init: function (element, valueAccessor, allBindingsAccessor, viewModel, bindingContext) {
                  var nodes = Array.prototype.slice.call(element.childNodes, 0);
