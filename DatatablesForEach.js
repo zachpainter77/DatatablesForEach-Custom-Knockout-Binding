@@ -20,7 +20,6 @@ ko.bindingHandlers.DataTablesForEach = {
                         beforeRenderAll: function (el, index, data) {
 
                             if (ko.utils.domData.get(element, key)) {
-                                $(element).closest('table').DataTable().clear();
                                 $(element).closest('table').DataTable().destroy();
                             }
                         },
