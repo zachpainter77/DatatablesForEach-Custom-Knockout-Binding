@@ -21,7 +21,6 @@ ko.bindingHandlers.dataTablesForEach = {
         ko.unwrap(options.data);       
         ko.bindingHandlers.foreach.update(element, valueAccessor, allBindings, viewModel, bindingContext);
         (function() {
-            console.log(options);
             var table = $(element).closest('table').DataTable(options.dataTableOptions);
             if (options.dataTableOptions.paging) {
                 if (table.page.info().pages - ko.bindingHandlers.dataTablesForEach.page == 0) 
